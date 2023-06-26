@@ -147,18 +147,31 @@
           min="10"
           max="120"
         />
-
-        <input type="text" name="OfficeName" required />
+        <br /><br />
+        <label for="OfficeName">Office Name:</label>
+        <input type="text" name="OfficeName" required /><br /><br />
+        <label for="userMail">Email</label>
         <input
           type="email"
           name="userMail"
           autocomplete="on"
           placeholder="Email index"
-        />
-        <input type="file" name="userPic" capture="environment" />
-        <input type="tel" name="userPhone" maxlength="10" />
-        <input type="text" name="dream" readonly value="Google or Apple" />
-        <input type="text" name="mlm" disabled value="marketing" />
+        /><br /><br />
+        <label for="userPic">Upload Pic:</label>
+        <input type="file" name="userPic" capture="environment" /><br /><br />
+        <label for="userPhone">Phone Number:</label>
+        <input type="tel" name="userPhone" maxlength="15" /><br /><br />
+        <label for="dream">Dream:</label>
+        <input
+          type="text"
+          name="dream"
+          readonly
+          value="Google or Apple"
+        /><br /><br />
+        <label for="mlm">MLM Scam:</label>
+        <input type="text" name="mlm" disabled value="marketing" /><br /><br />
+        <input type="text" name="mlm" readonly value="marketing" /><br /><br />
+        <input type="submit" value="Submit" />
       </form>
     </div>
   </body>
