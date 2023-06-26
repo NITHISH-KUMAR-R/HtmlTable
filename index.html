@@ -174,5 +174,49 @@
         <input type="submit" value="Submit" />
       </form>
     </div>
+
+    <div id="form2">
+      <form action="/someotherpath" method="post">
+        <label for="luckyNumber">Find your lucky Number</label>
+        <select name="luckyNumber" size="1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <br />
+
+        <label for="textarea">Text Message Box</label>
+        <br />
+        <textarea
+          name="textarea"
+          id=""
+          style="max-width: fit-content; max-height: fit-content"
+        ></textarea>
+
+        <fieldset>
+          <legend>Login</legend>
+          <input
+            type="text"
+            name="Uname"
+            id=""
+            placeholder="Enter Your Name"
+            list="myname"
+          />
+          <datalist id="myname">
+            <option value="Nithish"></option>
+            <option value="Dharun"></option>
+            <option value="lebin"></option>
+          </datalist>
+          <input type="password" name="pass" id="" placeholder="Password" />
+          <input type="submit" value="Login" formtarget="_blank" />
+        </fieldset>
+
+        <header>This iS Nithish Page</header>
+        <footer>This is done By Nithish</footer>
+      </form>
+    </div>
+    <article>This is Article</article>
+    <main>Main content of the Page</main>
+    <section>This is same Like Div Section</section>
   </body>
 </html>
