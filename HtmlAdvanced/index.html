@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiley</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      canvas {
+        border-radius: 5px;
+        background-color: seagreen;
+        width: 80%;
+        height: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" height="800" width="500"></canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth - 100;
+
+    ctx.beginPath();
+    ctx.arc(300, 300, 200, 0, Math.PI * 2);
+
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.fillStyle = "Yellow";
+    ctx.fill();
+
+    //eye
+    ctx.beginPath();
+    ctx.arc(200, 220, 30, 0, Math.PI * 2);
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(400, 220, 30, 0, Math.PI * 2);
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.fillStyle = "black";
+    ctx.fill();
+    //mouth
+    ctx.beginPath();
+    ctx.arc(300, 300, 100, 0, 3.14);
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    //Teeth
+    ctx.beginPath();
+    ctx.moveTo(300, 300);
+    ctx.lineTo(270, 300);
+    ctx.lineTo(270, 340);
+    ctx.lineTo(300, 340);
+    ctx.lineTo(300, 300);
+
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "white";
+    ctx.stroke();
+    ctx.fillStyle = "White";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(350, 300);
+    ctx.lineTo(320, 300);
+    ctx.lineTo(320, 340);
+    ctx.lineTo(350, 340);
+    ctx.lineTo(350, 300);
+
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "white";
+    ctx.stroke();
+    ctx.fillStyle = "White";
+    ctx.fill();
+  </script>
+</html>
